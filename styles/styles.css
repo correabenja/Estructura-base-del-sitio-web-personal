@@ -1,0 +1,95 @@
+/*Import Font*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*Colors*/
+:root {
+  /* Fondos */
+    --color-fondo: #121212;
+    --color-fondo-secundario: #1b1b1b;
+    --color-tarjeta: #242424;
+
+  /* Textos */
+    --color-texto: #f5f5f5;
+    --color-texto-secundario: #bdbdbd;
+
+  /* Color principal: naranja industrial */
+    --color-principal: #f57c00;
+    --color-principal-hover: #ff9800;
+    --color-principal-oscuro: #c45f00;
+
+  /* Detalles */
+    --color-borde: #3a3a3a;
+    --color-sombra: rgba(0, 0, 0, 0.35);
+}
+
+/*Styles basic*/
+*{
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Body*/
+body{
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+/*Header*/
+.header{
+  width: 100%;
+  padding: 10px;
+  font-family: sans-serif;
+  background-color: var(--color-fondo-secundario);
+  position: fixed;
+  z-index: 200;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Navbar*/
+.nav-bar{
+  list-style: none;
+  display: flex;
+  margin: 0px 30px;
+  gap: 30px;
+}
+a{
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--color-texto);
+  transition: all 0.3s ease;
+}
+a:hover{
+  color: var(--color-principal);
+}
+
+/*Main*/
+main{
+}
+/*Hero*/
+.hero{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--color-principal);
+}
+.hero-container{
+  width: 50%;
+  border: 2px solid var(--color-principal-oscuro);
+  text-align: center;
+}
+.hero-btn{
+  border: 2px solid var(--color-principal-hover);
+  margin: 10px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.hero-img img{
+  width: 300px;
+  border-radius: 50%;
+}
