@@ -9,7 +9,9 @@
     box-sizing: border-box;
 }
 
-/*INICIO*/
+/* ===========================
+    HOME
+=========================== */
 /* Estilos generales */
 body {
     font-family: "Open Sans", sans-serif;
@@ -18,7 +20,9 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+/* ===========================
+    HEADER
+=========================== */
 .header{
     display: flex;
     flex-direction: column;
@@ -51,7 +55,9 @@ body {
     padding: 5px;
 }
 
-/* Hero */
+/* ===========================
+    HERO
+=========================== */
 .hero{
     display: grid;
     grid-template-columns: 1fr;
@@ -127,7 +133,9 @@ body {
     background-color: #005fa3;
 }
 
-/*SOBRE MI*/
+/* ===========================
+    ABOUT ME
+=========================== */
 .sobremi{
     background-color: #fff;
     padding: 60px 40px;
@@ -176,8 +184,24 @@ body {
     border-radius: 10%;
 }
 
+/* ===========================
+    SKILLS
+=========================== */
+.skills{
+    background-color: #fff;
+    padding: 60px 40px;
+}
+.container{
+    margin-top: 70px;
+    text-align: center;
+}
+.container h2{
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
 /* Tarjetas */
-.about-info{
+.skills-info{
     display: grid;
     grid-template-columns: 1fr;
     gap: 25px;
@@ -208,7 +232,9 @@ body {
     border-bottom: 1px solid #ddd;
 }
 
-/*PROYECTOS*/
+/* ===========================
+    PROJECTS
+=========================== */
 .projects{
     background-color: #fff;
     padding: 60px 40px;
@@ -305,7 +331,9 @@ body {
     background-color: #005fa3;
 }
 
-/*CONTACTO*/
+/* ===========================
+    CONTACT
+=========================== */
 .contact{
     background-color: #fff;
     padding: 60px 40px;
@@ -383,7 +411,9 @@ body {
     background-color: #005fa3;
 }
 
-/* Footer */
+/* ===========================
+    FOOTER
+=========================== */
 .footer {
     background-color: #222;
     width: 100%;
@@ -410,7 +440,9 @@ body {
     margin-top: 15px;
 }
 
-/*MEDIA QUERIES*/
+/* ===========================
+    TABLET
+=========================== */
 @media (min-width: 720px){
     /* HEADER */
     .header{
@@ -452,11 +484,11 @@ body {
         align-items: center;
         text-align: left;
     }
-
     .about-img img{
         max-width: 280px;
     }
-    .about-info{
+    /*SKILLS*/
+    .skills-info{
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
@@ -478,6 +510,10 @@ body {
         align-items: start;
     }
 }
+
+/* ===========================
+    DESKTOP
+=========================== */
 @media (min-width: 1024px){
     /*INICIO*/
     .header{
@@ -516,7 +552,9 @@ body {
         grid-template-areas:
         "text image";
     }
-    .about-info{
+
+    /*SKILLS*/
+    .skills-info{
         grid-template-columns: repeat(3, 1fr);
     }
     .info-card:last-child{
